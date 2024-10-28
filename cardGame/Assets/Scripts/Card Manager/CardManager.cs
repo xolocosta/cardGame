@@ -46,7 +46,7 @@ public class CardManager : MonoBehaviour
 
         _discardDeckImage = Instantiate(Resources.Load<GameObject>("Prefabs/Discard Image"), _canvas.transform);
         _discardDeckImage .transform.localScale = new Vector2(1.0f, 1.0f);
-        _discardDeckImage.transform.position = _drawDeckPos;
+        _discardDeckImage.transform.position = _discardDeckPos;
         _discardDeckText = _discardDeckImage.transform.Find("Discard Value").GetComponent<Text>();
 
         MoveRandomly(_deck, _drawDeck, false);
